@@ -6,13 +6,18 @@ tags: ['bigquery', 'data', 'google-cloud']
 ---
 
 Google BigQuery is a very powerful, serverless data warehosue that
-lets you ingest unlimited data on a pay-per-use basis (storage + querying).
+lets you ingest unlimited data on a pay-per-use basis.
 The primary advantage of data warehouses is the ability to quickly query and analyze immense amounts of **structured** data.
 
-Modern data warehouses support new, unstructured data types such as JSON, Avro, and so on, which makes these data warehouses a great contender for data lakes.
+Modern data warehouses support new, unstructured data types such as JSON, Avro, and so on, which makes these data warehouses great contenders for data lakes.
 BigQuery recently added native JSON column type, which we can leverage for our semi-structured lakehouse.
 With JSON support we can skip the traditional datalakes that are just blob storage with files, from classic Hadoop + hive through GCS, S3, Athena etc.
 Maintaining such infrastructure and understanding the low-level components, such as metastore, ORC, and Parquet is an expensive process for most startups, financially and with regard to domain expertise.
+
+## Pricing model
+Google BigQuery pricing is based on a pay-per-use model. Okay, great, so are most data lakes. So what makes BigQuery different?
+Included in their pricing model is storage, querying, and (Or, add what is included here)
+Most other data lakes require you to add (read: pay for) several additional layers to accomplish the same tasks that are native to BigQuery. In addition to paying for these additional layers, you'll most likely have to hire additional resources to manage all of this.
 
 ## Data Lakes
 
